@@ -36,7 +36,8 @@ from sklearn.model_selection import GroupKFold
 
 RANDOM_SEED = 42
 TARGET_PASSAGES = 200_000
-OUTPUT_DIR = os.path.join("scale_up", "data")
+SCALE_UP_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.join(SCALE_UP_DIR, "data")
 
 
 def parse_corpus_id(cid: str):
